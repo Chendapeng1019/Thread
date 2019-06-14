@@ -3,7 +3,7 @@ package state;
 /**
  * @ClassName BlockedSleep01
  * @Description
- * sleep模拟网络延时，放大了发生问题的可能性
+ * sleep模拟休息
  * @Author chendapeng
  * @Date 2019/6/14
  **/
