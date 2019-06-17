@@ -4,6 +4,7 @@ package state;
  * @ClassName BlockedJoin01
  * @Description
  * join:合并线程，插队线程
+ * 调用join()线程的插队，直到该线程完毕后其他线程才能继续运行
  * @Author chendapeng
  * @Date 2019/6/14
  **/

@@ -22,8 +22,8 @@ public class DaemonTest {
 class You implements Runnable{
     @Override
     public void run() {
-        for(int i=1;i<365*100;i++){
-            System.out.println("happy life...");
+        for(int i=1;i<1000;i++){
+            System.out.println("happy life..."+i);
         }
         System.out.println("ooooo....");
     }
@@ -32,8 +32,8 @@ class You implements Runnable{
 class God implements Runnable{
     @Override
     public void run() {
-        for(int i=1;i<365*1000000;i++){
-            System.out.println("bless you...");
+        for(int i=1;i<10000;i++){
+            System.out.println("bless you..."+i);
         }
 
     }
