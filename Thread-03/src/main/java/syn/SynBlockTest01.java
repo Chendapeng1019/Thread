@@ -13,7 +13,7 @@ package syn;
 public class SynBlockTest01 {
     public static void main(String[] args) {
         //账号
-        Account account = new Account(100,"结婚礼金");
+        Account account = new Account(1000,"结婚礼金");
         SynDrawing you  = new SynDrawing(account,80,"可悲的你");
         SynDrawing wife  = new SynDrawing(account,90,"haapy的她");
         you.start();
@@ -39,6 +39,10 @@ class SynDrawing extends Thread{
     }
 //目标锁定account
     public  void test(){
+        if(account.money<=0){
+            System.out.println("账号余额不足！！！");
+            return;
+        }
         synchronized (account){
             if(account.money-drawingMoney<0){
                 System.out.println("账号余额不足！！！");
